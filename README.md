@@ -1,7 +1,7 @@
 # GitLab Stale MR Bot
 
 This is an experiment that allows you to close stale GitLab merge requests via
-SMS using Twilio. Currently I've only implemented sending an SMS with some brief details on the oldest stale MR.
+SMS using Twilio.
 
 ## Required Environment Variables
 
@@ -19,7 +19,7 @@ files for running in VS Code's [remote containers](https://code.visualstudio.com
 
 ## To-Do's
 
-- [ ] Handling SMS replies
+- [x] Handling SMS replies
 - [ ] Support multiple phone numbers
 - [ ] Support multiple GitLab projects
 - [ ] Support GitLab groups

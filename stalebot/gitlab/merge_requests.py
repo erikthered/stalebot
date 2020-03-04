@@ -21,10 +21,17 @@ def find_stale():
     mr = [mr for mr in mrs if parse(mr.updated_at) < stale_date][-1]
 
     return {
+        "project_id": project.id,
         "project_name": project.name,
-        "number": mr.iid,
+        "iid": mr.iid,
         "author": mr.author["name"],
         "title": mr.title,
         "description": mr.description,
         "updated_at": parse(mr.updated_at).strftime("%b %d %Y"),
     }
+
+
+def close(mr_id):
+    mr = project.mergerequests.get(mr_id)
+    mr.state_event = "close"
+    mr.save()
