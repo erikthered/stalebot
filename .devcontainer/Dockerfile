@@ -48,5 +48,8 @@ RUN apt-get update \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
+# Add user's bin directory to path
+ENV PATH="/home/${USERNAME}/.local/bin:${PATH}"
+
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog
