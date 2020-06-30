@@ -1,0 +1,135 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-type:
+      - application/json
+      Cookie:
+      - __cfduid=da4cd35aff40f11aeb670c1ff0884d9ec1593476364
+      User-Agent:
+      - python-gitlab/2.0.1
+    method: GET
+    uri: https://gitlab.com/api/v4/projects/XXXXX/merge_requests?state=opened&order_by=updated_at
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA+1b+2/cNhL+V3T7Y+HV8imRAopDcekVvqJF0LgN7ppiQZHUWrVW2ujhxBf0f78h
+        pX043ofhbOzFYW042R1SfAyH3ww/jn7/NMrNKIkIoSJm8mKUu68Y0YvRoq7+tLqdegEWjMYkvhi1
+        eVvYUTJ6e/k6CV7XtraFVY0NbllIUUhHFyNjG13nizavSqgHgqZVrXukWtjSGhDo2oLETFULUoII
+        GqNoTMgVjhMiEs7CmEf/gXrdwmypJ69wlDCeYBkKSV29ua1n0Fx6N0rKrihWAtd+L9BF1dyrMQjW
+        NVoFbbTTtFalvoZhzVXT2tqNvupqbdcFi9Wcx+s5d42tp2XV2maqq66EfpEb/q2T+M+m+lCuv6mm
+        yWelBaX0w1Nde13Vo6RfDIpiTC5GpZo7rX1f5zfBz7ZoQJ3QJnQ0FFgoKJfypY6VbvNbCxXVrYIp
+        Tbu6gDau23bRJJNJY3VX23BW96WhruaT/uOE6Cw1GcsQF8zElmP4bC0nlIosio39e/OtQO86hEhk
+        vs2NLdtc+xF9sOlnvczARFTqG98Y418wpmHaoJLf/1hpdoed9euxvRCah4n3rXyo6ptpXk6h5qy2
+        DUjburNgA3lhm7YqV0r2VjL9cG2hbr6wRV7aadNpba2BhzJVNO4pX8lpswPhqANjsPrGW21zrUBi
+        FeEsymAAmUYSKxTrTHDDjVbEZJFASGFLtFqaJdjDfJ63U/90v9rN+04111sKTN7oDnRUldOi8r0u
+        n7iuusJMazuvbmF09y2ybzSrnJVurzHMrbYZbNdSO6v6G2xxGOJKBJP9BDOsarclV4WF8ta0kmSw
+        u+BbM1d1u1B3fudP+n+r0inUPwkrvdcodj8+GU/6Bajt+w5Wr5n0w2zzeb8ofpj+G5Tmc48rsLva
+        qlXFtK8FINNvv+turspeuK7cK2soevCUK4XR9wu0solWNTdutRaFdaC2so5Po/VeH4oBY5YyaOda
+        OTgosyLX7drEUre2eTmbrpe7gYVrquLWrXhvvWoB9nwLNjkFQ6tqO/V66e3hr4slaMco4hKgegBt
+        gOft+2UJ2r/YDACiqqH34BenFN1+Z4zbNUFbOTS/BeV9b/IWTOM+jH8T/NqDcfBeBbW6sYHTyrv6
+        Xbku+diYXjA0FFhoyXVVZUHVXts6eH15GVRlcPnqN7yzpkO3QJUm+G++cJWzrjSukd7qg4WaWfes
+        +/uHQ/UmePP6u3+PCRbcbdLH+Rp+RVCCREJFKDF+lK/BUfy1fM1Wl/K531nNcgx7GHQE/zVtDSs4
+        Vv0SDt7haG6IYYolJytH9Ort0MPgf8wHVZe2bhYbat/vfgD/bduEvX8Yu6XKdVjadtItikqZBrZ/
+        cwdudz5xbm7pmYZxDF/DRTmDDvcCzHpkz+d0lv7jGF5HA26lw5Zfex4BP4ZlPFXWpkbyWKYqi6UR
+        lqUWy0hwoSJB3AM9iJ6A5+nB7DPHE8MIdzqevnDT8TjJYxxPfGTH4/o9O55tjocDZjLM2OB4YnzI
+        7/jDwg8F7P+0+hhclq2FENQfED73M/cgHXG0gS37jg98jOFYIBMqEyxCguVuSGdXWCQMw0kjROL5
+        jw89jMPMJrNBH+P8nj6Oe5SIIYBCsD4DZv+U62tli+BVpdo70O3GcWLeF4VmKPriE4WNhRGUZEaw
+        OFPU8AiwinOZilSmyIqnnSjuD/P58P2Ih4rt8M65SiPQElJGMq2ZQLGNdSoZJkLKFCMmIwSfTgne
+        tx0sYrwb3oeyNbp7wWFwh2rHPFT4Xs/QvhXaCQQSYHoDtDM4XO0/Unhof1vVhXmtHKLcPzZswjmm
+        TDwSzukYiytCE0ISFIdI7mGD6BXBCZcJ4SElLwTnbmaTuZkCFVEYOBcPwHo/EidfQAidUfweBXkS
+        1NB2FDc6TrXSNrIRi2mKqIJfyUSKMpHSlLPYKo3Sk0dx5iKvHUH6ULZGcS84jOJQ7Zgo7ns9o/g2
+        FI8wwSyi0YDijiJ6BIr/UFfdIvjR3gWXTdM5Enk3mEP75JFgHo0xvkIswTxBMoyi3XQLhisA6ah9
+        uALA/KvRLTup/YFiYWQyc6qY3ti7aT6o4hyW76Vc/m/DcsEctR8jImzKOSeZJtRKbZhOGbD/jKZW
+        Rwg5suBkWJdtYbncQ/cPZWtA94LDgA7VjgnovtczoG8DdB7FseNcBkDnB5n+f+YfgRlvIBgdY7iz
+        e4Dlj8RuNibU8ypxwiO4bt3Fq/AxgoAdKHWIxXGInocqxyz0/NBnF7Sbk36I2qDCJ9/LcoYkBdZr
+        IFP+ZbMsePO+y4GJh3FscCl/wg2SP6l/MYmSpQTQRkEAyUxGqZEkzrTJYqWIYoY/kUQZxvd87MnX
+        Z8dJJIUWihLIUuCZtiIjXMDNLEYKWSYNAkoF7mbTU8LpLew430OOD2VrmPaCwzAN1Y4J077XF4Lp
+        XmOneiHLGYuQdHSrv5Bl/FDY3aP0G4/SgohgHLzJ3TVz8FOVwkUSfO9vXYONQDyA6+AgWBSqDN78
+        +OvTgR1BsA0ReZQgHsKW2UGYr4AdJRyFkqLnuAPdC+ygpwFsj3bTSc/A7nKfth8R9+faHBnYIYVq
+        ffMJSRE++8b5UZ97ozKFcJzCn6Qxx4oTnfJIywxhakCcWko51i4oOJlYfAvGM5eosItb6cs2uBUn
+        OIzx0OYxMd4P8YzxW5JueMQYI0QsI3EIB7fvm2XOjScVMJM0KOxMFYGpdJC56PwBdIM3CFJIjbyB
+        FJcmgFvBujKdtgY+9jkumMYMMl/u5b24lt0GeUTeCwTz2AXzKIYEz5CTXay6x3yox31+DI7ZC2L+
+        SnuQZgbaG4P2xkvtPQzuz0mXL5Z0eUxH8DDr0mRExoIrbJhgFkmDlY0MFZpZprQgGHgZbchJsTBb
+        kJ+z3cg/lG1E967yYeSH546J/H4YL4T8gw2dbnhPY4g7IKrvw3tyCPof5MgPge2TMuTZGGFHsUCK
+        C4tCsp+KcegdJwgS8mNP2XhH9hIZ8sOMjwvV53D9qeH6cbNY9kfrjOnMEmY0YXC+pERLHVEeYWC0
+        ONyOwkGZI5YRF72cdLTuyNNd0XpfthGtO8FhzIa7s2Nitr+KeyHMPnFGhkvIkXdEjIdsl828P1r3
+        kL1JnlMcBeMsuHFv9QTdAvIWzcObUVD/4wJwHPmXnCBLMQZo3kW6QKAO5AyFVMaEuZehyLNDeM+h
+        w9xhZmfsXr9AtfFq07Nz6EfE7ocBNofXJyLIVWHUIbaVVkluTQbvgdEYEDyKEGYGBCcO1nwPWA9l
+        GwH248AanjsmWPthnMF6k1r543+iN6ychjoAAA==
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 5ab3b7357cf0035b-ORD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 30 Jun 2020 00:19:25 GMT
+      Etag:
+      - W/"8ddc84e9970bc87385698a9b679ea2d2"
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      GitLab-LB:
+      - fe-09-lb-gprd
+      GitLab-SV:
+      - localhost
+      RateLimit-Limit:
+      - '600'
+      RateLimit-Observed:
+      - '1'
+      RateLimit-Remaining:
+      - '598'
+      RateLimit-Reset:
+      - '1593476425'
+      RateLimit-ResetTime:
+      - Tue, 30 Jun 2020 00:20:25 GMT
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - aM4MC4gEYS
+      X-Runtime:
+      - '0.153478'
+      X-Total:
+      - '10'
+      X-Total-Pages:
+      - '1'
+      cf-request-id:
+      - 03a430d5670000035b5d301200000001
+    status:
+      code: 200
+      message: OK
+version: 1
