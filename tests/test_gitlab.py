@@ -16,8 +16,8 @@ def scrub_ids(request):
 
 
 def scrub_link(response):
-    logging.info(response["headers"]["Link"])
-    del response["headers"]["Link"]
+    if "Link" in response["headers"]:
+        del response["headers"]["Link"]
     return response
 
 
