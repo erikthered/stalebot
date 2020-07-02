@@ -22,6 +22,9 @@ def trigger():
     if len(stale_mrs) == 0:
         stale_mrs = merge_requests.find_stale()
 
+    if len(stale_mrs) == 0:
+        return "No stale MRs found"
+
     mr = stale_mrs.pop()
 
     message = f"""
