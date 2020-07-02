@@ -18,17 +18,22 @@ def find_stale():
     # filter MRs based on time since updated_at
     max_age = timedelta(days=30)
     stale_date = datetime.now(timezone.utc) - max_age
-    mr = [mr for mr in mrs if parse(mr.updated_at) < stale_date][-1]
+    stale_mrs = [mr for mr in mrs if parse(mr.updated_at) < stale_date]
 
-    return {
-        "project_id": project.id,
-        "project_name": project.name,
-        "iid": mr.iid,
-        "author": mr.author["name"],
-        "title": mr.title,
-        "description": mr.description,
-        "updated_at": parse(mr.updated_at).strftime("%b %d %Y"),
-    }
+    return list(
+        map(
+            lambda m: {
+                "project_id": project.id,
+                "project_name": project.name,
+                "iid": m.iid,
+                "author": m.author["name"],
+                "title": m.title,
+                "description": m.description,
+                "updated_at": parse(m.updated_at).strftime("%b %d %Y"),
+            },
+            stale_mrs,
+        )
+    )
 
 
 def close(mr_id):

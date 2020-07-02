@@ -7,6 +7,7 @@ from twilio.twiml.messaging_response import MessagingResponse
 app = Flask(__name__)
 
 recipient_number = os.environ["RECIPIENT_PHONE_NUMBER"]
+stale_mrs = []
 pending_mrs = {}
 
 
@@ -17,8 +18,11 @@ def hello():
 
 @app.route("/trigger")
 def trigger():
+    global stale_mrs
+    if len(stale_mrs) == 0:
+        stale_mrs = merge_requests.find_stale()
 
-    mr = merge_requests.find_stale()
+    mr = stale_mrs.pop()
 
     message = f"""
 MR#{mr['iid']} for project {mr['project_name']} is stale
@@ -26,7 +30,7 @@ Opened by: {mr['author']}
 Title: {mr['title']}
 Description: {mr['description']}
 Last Updated: {mr['updated_at']}
-Respond with '1' to close.
+Respond with '1' to close, or '2' to skip.
     """
 
     sms.send_stale_sms(message, recipient_number)
@@ -39,11 +43,13 @@ Respond with '1' to close.
 
 @app.route("/respond", methods=["GET", "POST"])
 def response():
+    global pending_mrs
+
     sender = request.values.get("From")
     body = request.values.get("Body", None)
     resp_msg = MessagingResponse()
 
-    if body != "1":
+    if body not in ["1", "2"]:
         resp_msg.message("I don't understand, sorry.")
         return str(resp_msg)
 
@@ -57,11 +63,12 @@ def response():
         resp_msg.message("There's no merge request currently awaiting review.")
         return str(resp_msg)
 
-    # close MR
-    merge_requests.close(mr_id)
+    if body == "1":
+        merge_requests.close(mr_id)
+        resp_msg.message(f"Closed MR#{mr_id}")
+    elif body == "2":
+        resp_msg.message(f"Skipped MR#{mr_id}")
 
     pending_mrs[recipient_number] = None
-
-    resp_msg.message(f"Closed MR#{mr_id}")
 
     return str(resp_msg)
